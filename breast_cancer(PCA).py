@@ -60,7 +60,7 @@ plt.ylabel('Variance Explained')
 plt.xlabel('Principal Components')
 plt.show()
 
-fig = plt.figure(figsize = (15, 8))
+fig = plt.figure(figsize = (15, 15))
 ax = fig.add_subplot(111, projection = '3d')
 ax.scatter(df.iloc[:, 0], df.iloc[:, 1], df.iloc[:, 2], c = df['diagnosis'], s = 60)
 ax.set_xlabel('PC1')
