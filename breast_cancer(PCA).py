@@ -47,11 +47,11 @@ X.shape
 
 components.shape
 
-pca.explained_variance_ratio_
-np.cumsum(pca.explained_variance_ratio_)
+explained_var_ratio = pca.explained_variance_ratio_
+# np.cumsum(pca.explained_variance_ratio_)
 
 df_pca = pd.DataFrame({'PC': ['PC1', 'PC2', 'PC3'],
-                       'var': np.cumsum(pca.explained_variance_ratio_)})
+                       'var': explained_var_ratio})
 df_pca
 
 # PCA visualization
