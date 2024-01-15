@@ -68,7 +68,7 @@ ax.set_ylabel('PC2')
 ax.set_zlabel('PC3')
 ax.view_init(30, 120)
 
-plt.figure(figsize = (18, 8))
+plt.figure(figsize = (18, 9))
 plt.subplot(1, 3, 1)
 sns.scatterplot( x = df.iloc[:, 0], y = df.iloc[:, 2], hue = df['diagnosis'], palette = 'Set1')
 plt.xlabel('PC1')
